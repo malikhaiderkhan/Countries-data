@@ -1,12 +1,18 @@
 import React from 'react';
-import Weather from './components/weather';
 import './App.css';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import CountryList from './components/CountryList';
+import CountryDetails from './components/CountryDetails';
 
 function App() {
   return (
-    <div className="App">
-      <Weather />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <CountryList />
+        <CountryDetails />
+      </div>
+    </Provider>
   );
 }
 
