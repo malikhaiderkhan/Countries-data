@@ -1,0 +1,31 @@
+.country-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create four columns */
+    gap: 0px; /* Add gap between grid items */
+    margin: 0 20px 0 20px;
+  }
+  
+  .country-box {
+    border: 1px solid #fc2d72;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fc2d7c;
+  }
+
+  .country-box:nth-child(odd) {
+    background-color: #f5186d; /* Light pink for odd-indexed boxes */
+  }
+  
+  .country-button {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .country-button img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
