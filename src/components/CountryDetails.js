@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 function CountryDetails() {
   const selectedCountry = useSelector((state) => state.countries.selectedCountry);
+  console.log(selectedCountry);
 
   if (!selectedCountry) {
     return <p>Select a country to see details.</p>;
@@ -23,7 +24,6 @@ function CountryDetails() {
         Subregion:
         {selectedCountry.subregion}
       </p>
-      {/* Add more details as needed */}
     </div>
   );
 }

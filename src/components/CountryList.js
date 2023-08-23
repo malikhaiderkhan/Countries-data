@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchCountryData, setSelectedCountry } from '../redux/countries/countriesSlice';
+import { Link } from 'react-router-dom';
+import { fetchCountryData } from '../redux/countries/countriesSlice';
 
 function CountryList() {
   const dispatch = useDispatch();
@@ -11,10 +12,6 @@ function CountryList() {
     dispatch(fetchCountryData());
   }, [dispatch]);
 
-  const handleCountryClick = (country) => {
-    dispatch(setSelectedCountry(country));
-  };
-
   return (
     <div>
       <h2>Country List</h2>
@@ -22,13 +19,9 @@ function CountryList() {
       <ul>
         {countries.map((country) => (
           <li key={country.cca3}>
-            <button
-              type="button"
-              onClick={() => handleCountryClick(country)}
-              className="country-button"
-            >
+            <Link to={`/country/${country.cca3}`} className="country-button">
               {country.name.common}
-            </button>
+            </Link>
           </li>
         ))}
       </ul>

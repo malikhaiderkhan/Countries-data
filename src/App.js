@@ -1,18 +1,19 @@
 import React from 'react';
 import './App.css';
-import { Provider } from 'react-redux';
-import store from './redux/store';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/header';
 import CountryList from './components/CountryList';
 import CountryDetails from './components/CountryDetails';
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <CountryList />
-        <CountryDetails />
-      </div>
-    </Provider>
+    <div className="App">
+      <Header />
+      <Routes>
+        <Route path="/" element={<CountryList />} />
+        <Route path="/country/:cca3" element={<CountryDetails />} />
+      </Routes>
+    </div>
   );
 }
 
