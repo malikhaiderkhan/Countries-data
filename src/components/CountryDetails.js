@@ -13,49 +13,50 @@ function CountryDetails() {
 
   return (
     <div className="country-details">
-      <img src={selectedCountry.flags[1]} alt={selectedCountry.name.common} />
+      <img className="country-flag" src={selectedCountry.flags[1]} alt={selectedCountry.name.common} />
       <p className="country-detail">
-        Name:
+        <b>Name</b>
+        {': '}
         {selectedCountry.name.common}
       </p>
       <p className="country-detail">
-        Population:
-        {' '}
+        <b>Population</b>
+        {': '}
         {selectedCountry.population}
       </p>
       <p className="country-detail">
-        Capital:
-        {' '}
+        <b>Capital</b>
+        {': '}
         {selectedCountry.capital}
       </p>
       <p className="country-detail">
-        Region:
-        {' '}
+        <b>Region</b>
+        {': '}
         {selectedCountry.region}
       </p>
       <p className="country-detail">
-        Subregion:
-        {' '}
+        <b>Subregion</b>
+        {': '}
         {selectedCountry.subregion}
       </p>
       <p className="country-detail">
-        Demonym:
-        {' '}
+        <b>Demonym</b>
+        {': '}
         {selectedCountry.demonyms.eng.m}
       </p>
       <p className="country-detail">
-        Landlocked:
-        {' '}
+        <b>Landlocked</b>
+        {': '}
         {landlockedText}
       </p>
       <p className="country-detail">
-        Area:
-        {' '}
+        <b>Area</b>
+        {': '}
         {selectedCountry.area}
       </p>
       <p className="country-detail">
-        Continent:
-        {' '}
+        <b>Continent</b>
+        {': '}
         {selectedCountry.continents}
       </p>
     </div>

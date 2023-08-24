@@ -1,7 +1,7 @@
 .country-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Create four columns */
-    gap: 0px; /* Add gap between grid items */
+    gap: 0px;
     margin: 0 20px 0 20px;
   }
   
@@ -17,7 +17,7 @@
   }
 
   .country-box:nth-child(odd) {
-    background-color: #f5186d; /* Light pink for odd-indexed boxes */
+    background-color: #f5186d;
   }
   
   .country-button {
