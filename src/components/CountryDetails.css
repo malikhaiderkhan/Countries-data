@@ -1,0 +1,11 @@
+.country-details {
+    color: white;
+  }
+  
+  .country-detail {
+    background-color: #fc2d7c; 
+  }
+  
+  .country-detail:nth-child(even) {
+    background-color: #f5186d; /* Dark pink for even-indexed rows */
+  }
