@@ -1,12 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import MicIcon from '../assets/mic.png';
 import SettingsIcon from '../assets/settings.png';
 import './header.css';
 
 function Header() {
+  const location = useLocation();
+  const isDetailsPage = location.pathname.startsWith('/country/');
+
   return (
     <header className="header">
       <div className="header-left">
+        {isDetailsPage && (
+        <Link to="/" className="back-link">
+          &lt;
+        </Link>
+        )}
         <h1>Population Data</h1>
       </div>
       <div className="header-right">
