@@ -23,7 +23,7 @@ function CountryList() {
   }, [countries, searchQuery]);
 
   return (
-    <div>
+    <div className="country-list-container">
       <h2>Country Population</h2>
       <div className="country-search">
         <input

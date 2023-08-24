@@ -1,6 +1,6 @@
 .country-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create four columns */
+    grid-template-columns: repeat(4, 1fr);
     gap: 0px;
     margin: 0 20px 0 20px;
   }
@@ -33,6 +33,8 @@
 
   .country-search {
     margin-bottom: 20px;
+    width: 100%;
+    position: relative;
   }
   
   .country-search input {
@@ -46,4 +48,12 @@
   .country-search input:focus {
     outline: none;
     border-color: #333;
+  }
+
+  .country-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
   }
