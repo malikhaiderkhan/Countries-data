@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchCountryData } from '../redux/countries/countriesSlice';
+import { fetchCountryData, setSelectedCountry } from '../redux/countries/countriesSlice';
 import './CountryList.css';
 
 function CountryList() {
@@ -37,7 +37,11 @@ function CountryList() {
       <div className="country-grid">
         {filteredCountries.map((country) => (
           <div key={country.cca3} className="country-box">
-            <Link to={`/country/${country.cca3}`} className="country-button">
+            <Link
+              to={`/country/${country.cca3}`}
+              className="country-button"
+              onClick={() => dispatch(setSelectedCountry(country))}
+            >
               <img src={country.flags[1]} alt={country.name.common} />
               <h3>{country.name.common}</h3>
               <p>
