@@ -51,7 +51,7 @@
 
 > Below is a link to my deployed project.
 
-- [Live Demo Link will be avilable soon](#)
+- [https://subtle-queijadas-c0e293.netlify.app/](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
