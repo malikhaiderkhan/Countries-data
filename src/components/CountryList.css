@@ -1,7 +1,7 @@
 .country-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0px;
+  gap: 0;
   margin: 0 20px 0 20px;
 }
 
@@ -13,7 +13,7 @@
   align-items: center;
   text-align: center;
   background-color: #fc2d7c;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .country-box:nth-child(odd) {
@@ -68,7 +68,7 @@
   .country-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    gap: 0;
     margin: 0 20px 0 20px;
   }
 }
@@ -77,7 +77,7 @@
   .country-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    gap: 0;
     margin: 0 20px 0 20px;
   }
 }
