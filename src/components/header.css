@@ -5,6 +5,7 @@
     padding: 1rem;
     background-color: #e01865;
     color: white;
+    position: relative;
   }
   
   .header h1 {
