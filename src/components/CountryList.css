@@ -1,59 +1,83 @@
 .country-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  margin: 0 20px 0 20px;
+}
+
+.country-box {
+  border: 1px solid #fc2d72;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fc2d7c;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.country-box:nth-child(odd) {
+  background-color: #f5186d;
+}
+
+.country-button {
+  text-decoration: none;
+  color: #333;
+}
+
+.country-button img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.country-search {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.country-search input {
+  padding: 8px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.country-search input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.country-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .country-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0px;
     margin: 0 20px 0 20px;
   }
-  
-  .country-box {
-    border: 1px solid #fc2d72;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fc2d7c;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
+}
 
-  .country-box:nth-child(odd) {
-    background-color: #f5186d;
+@media (max-width: 300px) {
+  .country-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin: 0 20px 0 20px;
   }
-  
-  .country-button {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .country-button img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 0.5rem;
-  }
-
-  .country-search {
-    margin-bottom: 20px;
-    width: 100%;
-    position: relative;
-  }
-  
-  .country-search input {
-    padding: 8px;
-    width: 80%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .country-search input:focus {
-    outline: none;
-    border-color: #333;
-  }
-
-  .country-list-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-  }
+}
