@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component testing Country details should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="country-details"
+  >
+    <img
+      alt="Ecuador"
+      class="country-flag"
+      src="https://flagcdn.com/w320/ec.png"
+    />
+    <p
+      class="country-detail"
+    >
+      <b>
+        Name
+      </b>
+      : Ecuador
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Population
+      </b>
+      : 17643060
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Capital
+      </b>
+      : Quito
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Region
+      </b>
+      : Americas
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Subregion
+      </b>
+      : South America
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Demonym
+      </b>
+      : Ecuadorean
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Landlocked
+      </b>
+      : No
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Area
+      </b>
+      : 276841
+    </p>
+    <p
+      class="country-detail"
+    >
+      <b>
+        Continent
+      </b>
+      : South America
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component testing Country list should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="country-list-container"
+  >
+    <h2>
+      Country Population
+    </h2>
+    <div
+      class="country-search"
+    >
+      <input
+        placeholder="Search country..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="country-grid"
+    >
+      <div
+        class="country-box"
+      >
+        <a
+          class="country-button"
+          href="/country/ECU"
+        >
+          <img
+            alt="Ecuador"
+            src="https://flagcdn.com/w320/ec.png"
+          />
+          <h3>
+            Ecuador
+          </h3>
+          <p>
+            Population:17643060
+          </p>
+        </a>
+      </div>
+      <div
+        class="country-box"
+      >
+        <a
+          class="country-button"
+          href="/country/FRA"
+        >
+          <img
+            alt="France"
+            src="https://flagcdn.com/w320/fr.png"
+          />
+          <h3>
+            France
+          </h3>
+          <p>
+            Population:67391582
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
