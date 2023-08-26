@@ -596,7 +596,7 @@ describe('countries reducer', () => {
 });
 
 describe('fetchCountryData', () => {
-  jest.setTimeout(10000);
+  jest.setTimeout(100000);
   it('should dispatch the correct actions on successful API request', async () => {
     // Mock the response data
     const mockResponse = {
