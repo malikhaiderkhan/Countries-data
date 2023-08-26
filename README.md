@@ -49,10 +49,10 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Below is a link to my deployed project.
+> Below is a link to my deployed project and video presentation.
 
 - [Live Demo Link](https://subtle-queijadas-c0e293.netlify.app/)
-- [Video Presentation](https://www.loom.com/share/d1a0c7e59b4d4b7198e0f8ac16ab5261?sid=efca3133-806b-489a-be34-391f790652ca)
+- [Video Presentation](https://www.loom.com/share/d1a0c7e59b4d4b7198e0f8ac16ab5261?sid=b58574f8-fa2e-4078-924c-b853c5fa139e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
