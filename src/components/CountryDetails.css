@@ -1,0 +1,23 @@
+.country-details {
+  color: white;
+  margin-bottom: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.country-detail {
+  background-color: #fc2d7c;
+  margin: 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-detail:nth-child(even) {
+  background-color: #f5186d;
+}
+
+.country-flag {
+  margin: 20px 0 40px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
