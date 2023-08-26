@@ -52,6 +52,7 @@
 > Below is a link to my deployed project.
 
 - [Live Demo Link](https://subtle-queijadas-c0e293.netlify.app/)
+- [Video Presentation](https://www.loom.com/share/d1a0c7e59b4d4b7198e0f8ac16ab5261?sid=efca3133-806b-489a-be34-391f790652ca)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,7 +135,7 @@ If you like this project you can follow my work through my social networks
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Nelson Sakwa 'Original design idea by Nelson Sakwa on Behance', Microverse, my Learning partner and Standup Team for supporting me.
+I would like to thank Nelson Sakwa for providing the design for user interface, Microverse, my Learning partner and Standup Team for supporting me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
